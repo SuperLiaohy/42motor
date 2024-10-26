@@ -1,0 +1,5 @@
+#Ignore the directory
+Dcmake/
+
+build/
+#Ignore the file

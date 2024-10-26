@@ -1,0 +1,23 @@
+//
+// Created by lhy on 2024/9/20.
+//
+
+#ifndef OWN_THREADCONFIG_H
+#define OWN_THREADCONFIG_H
+
+#define ENABLE_CHASSIS 1
+#define ENABLE_IMU 1
+
+
+#define ENABLE_IMU_CALIBRATION 1
+#define ENABLE_CAN_SEND 1
+
+
+#define IMU_EVENT (1<<0)
+#define CAN_SEND_EVENT (1<<1)
+#define CAN_RECEIVE_EVENT (1<<2)
+#define REMOTE_CONTROL_START_EVENT (1<<3)
+#define REMOTE_CONTROL_RECEIVE_EVENT (1<<4)
+#define CHASSIS_STATE_EVENT (1<<5)
+
+#endif //OWN_THREADCONFIG_H
