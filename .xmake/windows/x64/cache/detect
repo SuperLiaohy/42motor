@@ -1,0 +1,116 @@
+{
+    ["find_program_arm-none-eabi_arch_m7_plat_cross_checktoolcxx"] = {
+        ["arm-none-eabi-g++"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-g++]]
+    },
+    find_program = {
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-gcc]],
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-g++]],
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-ld]]
+    },
+    ["detect.tools.gcc.has_cflags"] = {
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++_10.3-2021.10"] = {
+            ["-v"] = true,
+            ["-print-multiarch"] = true,
+            ["-Xassembler"] = true,
+            ["-dumpmachine"] = true,
+            ["-pass-exit-codes"] = true,
+            ["--target-help"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-E"] = true,
+            ["--version"] = true,
+            ["-save-temps"] = true,
+            ["-print-multi-directory"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["--help"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-pie"] = true,
+            ["-dumpspecs"] = true,
+            ["-Xlinker"] = true,
+            ["-B"] = true,
+            ["-dumpversion"] = true,
+            ["-o"] = true,
+            ["-x"] = true,
+            ["-print-sysroot"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["--param"] = true,
+            ["-pipe"] = true,
+            ["-print-search-dirs"] = true,
+            ["-c"] = true,
+            ["-shared"] = true,
+            ["-print-multi-lib"] = true,
+            ["-S"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-time"] = true
+        },
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10"] = {
+            ["-v"] = true,
+            ["-print-multiarch"] = true,
+            ["-Xassembler"] = true,
+            ["-dumpmachine"] = true,
+            ["-pass-exit-codes"] = true,
+            ["--target-help"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-E"] = true,
+            ["--version"] = true,
+            ["-save-temps"] = true,
+            ["-print-multi-directory"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["--help"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-pie"] = true,
+            ["-dumpspecs"] = true,
+            ["-Xlinker"] = true,
+            ["-B"] = true,
+            ["-dumpversion"] = true,
+            ["-o"] = true,
+            ["-x"] = true,
+            ["-print-sysroot"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["--param"] = true,
+            ["-pipe"] = true,
+            ["-print-search-dirs"] = true,
+            ["-c"] = true,
+            ["-shared"] = true,
+            ["-print-multi-lib"] = true,
+            ["-S"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-time"] = true
+        }
+    },
+    find_programver = {
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc"] = "10.3-2021.10",
+        ["D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++"] = "10.3-2021.10"
+    },
+    ["find_program_arm-none-eabi_arch_m7_plat_cross_checktoolas"] = {
+        ["arm-none-eabi-gcc"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-gcc]]
+    },
+    ["find_program_arm-none-eabi_arch_m7_plat_cross_checktoolld"] = {
+        ["arm-none-eabi-ld"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-ld]]
+    },
+    ["find_program_arm-none-eabi_arch_m7_plat_cross_checktoolcc"] = {
+        ["arm-none-eabi-gcc"] = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-gcc]]
+    },
+    ["lib.detect.has_flags"] = {
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_cc___-fPIC"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_as___-fPIC"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-Wl,--print-memory-usage"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-T"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++_10.3-2021.10_cxx_cxflags__-fvisibility-inlines-hidden"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_cc___-Os"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_cc_cflags__-Os"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-Wl,--start-group"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__C:\\Users\\Administrator\\CLionProjects\\can_42motor\\STM32H723VGTx_FLASH.ld"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-lm"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-Wl,-Map=.map"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_cc_cflags__-g0"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_cc_cxflags__-DNDEBUG"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__--specs=nano.specs"] = false,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++_10.3-2021.10_cxx___-fPIC"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++_10.3-2021.10_cxx_cxflags__-DNDEBUG"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-gcc_10.3-2021.10_as___-Os"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-g++_10.3-2021.10_cxx___-Os"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-lc"] = true,
+        ["cross_none_D:\\gcc-arm-none-eabi\\10 2021.10\\bin\\arm-none-eabi-ld__ld_ldflags__-Wl,--gc-sections"] = false
+    }
+}

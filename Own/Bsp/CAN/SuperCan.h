@@ -39,6 +39,8 @@ public:
 
     void send(uint32_t id, uint8_t *data);
 
+    void send(uint32_t id, uint8_t *data , uint8_t len);
+
     void send(uint32_t id);
 
 

@@ -48,6 +48,7 @@
 
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
+osThreadId UserCANTaskHandHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -55,6 +56,7 @@ osThreadId defaultTaskHandle;
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void const * argument);
+void UserCANTask(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -105,6 +107,10 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
+  /* definition and creation of UserCANTaskHand */
+  osThreadDef(UserCANTaskHand, UserCANTask, osPriorityIdle, 0, 256);
+  UserCANTaskHandHandle = osThreadCreate(osThread(UserCANTaskHand), NULL);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -118,15 +124,33 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void const * argument)
+__weak void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+//  /* Infinite loop */
+//  for(;;)
+//  {
+//    osDelay(1);
+//  }
+  /* USER CODE END StartDefaultTask */
+}
+
+/* USER CODE BEGIN Header_UserCANTask */
+/**
+* @brief Function implementing the UserCANTaskHand thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_UserCANTask */
+__weak void UserCANTask(void const * argument)
+{
+  /* USER CODE BEGIN UserCANTask */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartDefaultTask */
+  /* USER CODE END UserCANTask */
 }
 
 /* Private application code --------------------------------------------------*/

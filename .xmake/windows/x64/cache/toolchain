@@ -1,0 +1,76 @@
+{
+    envs_arch_none_plat_cross = {
+        arch = "none",
+        __checked = true,
+        __global = true,
+        plat = "cross"
+    },
+    tool_target_can_motor_project_cross_m7_cxx = {
+        program = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-g++]],
+        toolchain_info = {
+            arch = "m7",
+            name = "arm-none-eabi",
+            cachekey = "arm-none-eabi_arch_m7_plat_cross",
+            plat = "cross"
+        },
+        toolname = "gxx"
+    },
+    tool_target_can_motor_project_cross_m7_ld = {
+        program = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-ld]],
+        toolchain_info = {
+            arch = "m7",
+            name = "arm-none-eabi",
+            cachekey = "arm-none-eabi_arch_m7_plat_cross",
+            plat = "cross"
+        },
+        toolname = "ld"
+    },
+    ["arm-none-eabi_arch_m7_plat_cross"] = {
+        sdkdir = [[D:\gcc-arm-none-eabi\10 2021.10]],
+        bindir = [[D:\gcc-arm-none-eabi\10 2021.10\bin]],
+        cross = "arm-none-eabi-",
+        arch = "m7",
+        plat = "cross",
+        __checked = {
+            cross = "arm-none-eabi-",
+            sdkdir = [[D:\gcc-arm-none-eabi\10 2021.10]],
+            bindir = [[D:\gcc-arm-none-eabi\10 2021.10\bin]]
+        }
+    },
+    cross_arch_m7_plat_cross = {
+        __checked = false,
+        plat = "cross",
+        arch = "m7"
+    },
+    tool_target_can_motor_project_cross_m7_as = {
+        program = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-gcc]],
+        toolchain_info = {
+            arch = "m7",
+            name = "arm-none-eabi",
+            cachekey = "arm-none-eabi_arch_m7_plat_cross",
+            plat = "cross"
+        },
+        toolname = "gcc"
+    },
+    tool_target_can_motor_project_cross_m7_cc = {
+        program = [[D:\gcc-arm-none-eabi\10 2021.10\bin\arm-none-eabi-gcc]],
+        toolchain_info = {
+            arch = "m7",
+            name = "arm-none-eabi",
+            cachekey = "arm-none-eabi_arch_m7_plat_cross",
+            plat = "cross"
+        },
+        toolname = "gcc"
+    },
+    envs_arch_m7_plat_cross = {
+        __checked = true,
+        plat = "cross",
+        arch = "m7"
+    },
+    cross_arch_none_plat_cross = {
+        arch = "none",
+        __checked = false,
+        __global = true,
+        plat = "cross"
+    }
+}

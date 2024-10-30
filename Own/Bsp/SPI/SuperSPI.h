@@ -5,6 +5,7 @@
 #ifndef DM_42_SUPERSPI_H
 #define DM_42_SUPERSPI_H
 
+#if USING_SPI
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,5 +31,7 @@ private:
     SPI_HandleTypeDef *hspi;
 
 };
+
+#endif
 
 #endif //DM_42_SUPERSPI_H

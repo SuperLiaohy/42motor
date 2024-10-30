@@ -2,9 +2,10 @@
 // Created by liaohy on 8/26/24.
 //
 
+
 #include "SuperUart.h"
 
-
+#if USING_UART
 SuperUart::SuperUart(UART_HandleTypeDef *_uart, uint16_t bufferSize, uint16_t _tx_buffer_size) : rx_buffer(bufferSize) {
     this->uart = _uart;
     if (_tx_buffer_size != 0) {
@@ -166,4 +167,4 @@ uint8_t* SuperUart::read(uint8_t *pData, uint16_t size) {
     return pData;
 }
 
-
+#endif

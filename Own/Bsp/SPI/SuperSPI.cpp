@@ -1,7 +1,7 @@
 //
 // Created by Administrator on 24-10-1.
 //
-
+#if USING_SPI
 #include "SuperSPI.h"
 
 void SuperSPI::Write(uint8_t *pData, uint16_t Size) {
@@ -27,3 +27,4 @@ void SuperSPI::WriteDMA(uint8_t *pData, uint16_t Size) {
 void SuperSPI::ReadDMA(uint8_t *pData, uint16_t Size) {
     HAL_SPI_Receive_DMA(hspi, pData, Size);
 }
+#endif

@@ -55,4 +55,15 @@ void SuperCan::send(uint32_t id, uint8_t *data) {
     if (HAL_FDCAN_AddMessageToTxFifoQ(hcan, &tx_header, data) != HAL_OK) { return; }
 }
 
-
+void SuperCan::send(uint32_t id, uint8_t *data , uint8_t len) {
+    tx_header.Identifier = id;
+    tx_header.IdType = FDCAN_STANDARD_ID;
+    tx_header.TxFrameType = FDCAN_DATA_FRAME;
+    tx_header.DataLength = len;
+    tx_header.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
+    tx_header.BitRateSwitch = FDCAN_BRS_OFF;
+    tx_header.FDFormat = FDCAN_CLASSIC_CAN;
+    tx_header.TxEventFifoControl = FDCAN_NO_TX_EVENTS;
+    tx_header.MessageMarker = 0;
+    if (HAL_FDCAN_AddMessageToTxFifoQ(hcan, &tx_header, data) != HAL_OK) { return; }
+}

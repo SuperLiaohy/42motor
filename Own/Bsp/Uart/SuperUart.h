@@ -2,8 +2,13 @@
 // Created by liaohy on 8/26/24.
 //
 
+
 #ifndef NONE_PRJ_SERIAL_H
 #define NONE_PRJ_SERIAL_H
+
+#define USING_UART 1
+
+#if USING_UART
 
 #ifdef __cplusplus
 extern "C" {
@@ -83,5 +88,7 @@ public:
 };
 
 extern SuperUart uartPlus10;
+
+#endif
 
 #endif //NONE_PRJ_SERIAL_H

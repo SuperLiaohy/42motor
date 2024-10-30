@@ -1,0 +1,9 @@
+{
+    mtimes = {
+        ["xmake.lua"] = 1730057268
+    },
+    recheck = false,
+    options = {
+        plat = "cross"
+    }
+}

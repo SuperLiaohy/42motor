@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Own/App/Imu/BMI088/BMI088Middleware.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Own/App/Imu/BMI088/BMI088driver.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Own/Heap/rtx_lib.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Own/Heap/rtx_memory.c" charset="GBK" />
+  </component>
+</project>

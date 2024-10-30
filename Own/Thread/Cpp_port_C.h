@@ -9,14 +9,6 @@
 extern "C" {
 #endif
 
-
-void start_c(void);
-
-void flash_init_c(void);
-void flash_write_c(void);
-void flash_read_c(void);
-
-
 #ifdef __cplusplus
 }
 #endif

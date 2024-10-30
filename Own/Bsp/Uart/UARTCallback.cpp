@@ -1,8 +1,8 @@
 //
 // Created by Administrator on 24-10-3.
 //
-
-#include "RemoteControl/RemoteControl.h"
+#include "Uart/SuperUart.h"
+#if USING_UART
 
 #ifdef __cplusplus
 extern "C" {
@@ -44,13 +44,11 @@ int16_t x,y;
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size) {
     UNUSED(Size);
 #if USING_UART_IDLE
-
-    if (huart == remote_control.uartPlus.uart) {
-        remote_control.update();
-    }
     if (huart == uartPlus10.uart){
 
     }
 
 #endif
 }
+
+#endif

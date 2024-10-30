@@ -10,8 +10,8 @@ extern "C" {
 #endif
 void UserCANTask(void const *argument);
 void PidTask(void const * argument);
-void StartDefaultTask(void const *argument);
 void OS_LedCallback(void const *argument);
+void StartDefaultTask(void const *argument);
 void OS_ErrorCallback(void const *argument);
 void OS_DetectCallback(void const *argument);
 void OS_ChassisCallback(void const *argument);
